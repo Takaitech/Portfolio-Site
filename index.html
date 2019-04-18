@@ -3,12 +3,12 @@
     <head lang="en">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <title></title>
+        <title>Taylor Ward Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Exo:100|IBM+Plex+Sans+Condensed|Press+Start+2P" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <header class="full-height" >
+        <header class="page"  class="full-height" >
             <H1 id="headline">Hi <br>
                 I 
                 AM <br> TAYLOR WARD <br>  Fullstack web developer <br>  currently based in Los Angeles, Ca
@@ -23,7 +23,7 @@
         </header>
         <main id="projects"  class="full-height" >
             <h2 class="category">PROJECTS</h2>
-            <section class="full-height">
+            <section class="page" class="full-height">
                 <h3>Anime Trailers</h3>
                 <p class="description">  This web app allows the user to select from top or upcoming anime series or movies and pulls up a list of trailers and promo videos straight into the browser where they can preview the anime. It also allows them to search for  a specific anime by title.</p>
                 <img class="devices" src="files/bit-synth-devices.png">
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="full-height">
+            <section class="page"  class="full-height">
                     <h3>Open-Up-App</h3>
                     <p class="description"> Open Up is an anonymous online social space intended for users with mental health disorders. It provides the user with the freedom to express themselves and get advice from others without having to show their identity about mental health issues </p>
                     <img class="devices" src="files/bit-synth-devices.png">
@@ -59,7 +59,7 @@
                             </ul>
                         </div>
             </section>
-            <section class="full-height">
+            <section class="page" class="full-height">
                     <h3>Bit Synth</h3>
                     <p class="description"> Bit Synth is an in browser polyphonic synthesizer and step sequencer that invites the user to shape sound and create synth presets to contribute to a public library of synth presets inspired by retro 8 bit and 16bit video games</p>
                     <img class="devices" src="files/bit-synth-devices.png">
@@ -77,11 +77,18 @@
                             </ul>
                         </div>
             </section>
-            <section id="bio" class="full-height">
+            <section class="page" id="bio" class="full-height">
                 <p>The need to constantly learn new ways to create interesting, memorable, and sharable experiences whether that be through technology, art, or music has led me down the path of becoming a web developer. I find a lot of joy in coding because </p>
                 <img id="headshot"class="full-height" src="files/headshot.png">
                 <h3>Contact</h3>
             </section>
         </main>
+
+        <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+        <script src="script/jquery.scrollify.js"></script>
+        <script src="script/app.js"></script>
     </body>
 </html>
