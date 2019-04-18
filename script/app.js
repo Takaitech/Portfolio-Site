@@ -1,27 +1,12 @@
-$.scrollify({
-    section : "section",
-    sectionName : "section-name",
-    interstitialSection : "",
-    easing: "easeOutExpo",
-    scrollSpeed: 1100,
-    offset : 0,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: true,
-    overflowScroll: true,
-    updateHash: true,
-    touchScroll:true,
-    before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
-  });
-        
-
-  $(function() {
+$(function() {
     $.scrollify({
       section : ".page",
+      scrollSpeed: 2000,
     });
+
+    $(document.body).on('touchmove',function() {
+      $.scrollify.next();
+    }); // for mobile
 
 
     $(".page").scroll(function() { //.box is the class of the div
