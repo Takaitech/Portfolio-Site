@@ -2,8 +2,6 @@
    margin:0;
 }
 
-body{
-}
 
 html, body {
    overflow-x:hidden;
@@ -24,12 +22,13 @@ h2 {
 }
 
 h3 {
-   margin:0;
+   padding: 35px 0px 25px 0px;
+
    font-size: 24px;
 }
 
 h4 {
-   margin: 0;
+   padding: 15px 0 0 0;
 }
 
 header {
@@ -64,7 +63,7 @@ section {
 
 #headshot {
    left: 40%;
-   height: 30%;
+   height: 40%;
    position:absolute;
    bottom:0;
 }
@@ -99,15 +98,14 @@ section {
    text-align: left;
    margin-left: auto;
    margin-right: auto;
-   paddding-top:15px;
+   padding-top:15px;
    padding-bottom: 25px;
-   margin:0;
 }
 
 #bio > p {
+   font-size: 12pt;
    padding-top: 100px;
    width: 80%;
-   font-size: 15pt;
    text-indent: 10pt;
    text-align: left;
    margin-left: auto;
@@ -162,6 +160,10 @@ ul > li {
    margin: 15px 0px 20px 0px;
    font-size: 13px;
    color: black;
+}
+
+.app-links > a {
+   padding: 0 7px 0 7px;
 }
 
 ul {
