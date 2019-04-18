@@ -4,10 +4,11 @@ $(function() {
       scrollSpeed: 2000,
     });
 
-    $(document.body).on('touchmove',function() {
+    $(document.body).on('touchmove',function(e){
+      e.preventDefault();
       $.scrollify.next();
-    }); // for mobile
-
+      //CODE GOES HERE
+    });
 
     $(".page").scroll(function() { //.box is the class of the div
       $.scrollify.next();
