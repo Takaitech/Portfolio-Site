@@ -1,3 +1,9 @@
+*{
+   margin:0;
+}
+
+body{
+}
 
 html, body {
    overflow-x:hidden;
@@ -18,9 +24,12 @@ h2 {
 }
 
 h3 {
-   font-size: 24px;
-   padding:  50px 5px 50px 5px;
    margin:0;
+   font-size: 24px;
+}
+
+h4 {
+   margin: 0;
 }
 
 header {
@@ -55,7 +64,7 @@ section {
 
 #headshot {
    left: 40%;
-   height: 50%;
+   height: 30%;
    position:absolute;
    bottom:0;
 }
@@ -83,17 +92,20 @@ section {
 
 
 .description {
+   font-size: 11pt;
    font-family: 'Exo', sans-serif;
-   padding: 0px 0px 50px 0px;
-   width: 80%;
+   width: 85%;
    text-indent: 10pt;
    text-align: left;
    margin-left: auto;
    margin-right: auto;
+   paddding-top:15px;
+   padding-bottom: 25px;
+   margin:0;
 }
 
 #bio > p {
-   padding-top:50px;
+   padding-top: 100px;
    width: 80%;
    font-size: 15pt;
    text-indent: 10pt;
@@ -104,7 +116,7 @@ section {
 
 .category {
    font-family: 'Exo', sans-serif;
-background-color: white;
+   background-color: white;
    font-size: 10pt;
    top:8px;
    left:8px;
@@ -117,7 +129,7 @@ background-color: white;
 
 .shortcuts {
  vertical-align: bottom;
-padding: 0;
+   padding: 0;
 }
 
 ul > li {
@@ -126,16 +138,32 @@ ul > li {
 }
 
 .tech-logo {
-   height:40px;
+   height:25px;
 }
 
 .tech-container {
    float:left;
-   padding: 5px;
+   margin: 5px;
 }
 .tech-container > span {
    font-family: 'Exo', sans-serif;
-   font-size: 15px;
-
+   font-size: 12px;
    display: block;
+}
+
+.technology{
+   text-align: center;
+   width: 85%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.app-links {
+   margin: 15px 0px 20px 0px;
+   font-size: 13px;
+   color: black;
+}
+
+ul {
+   margin: 0;
 }
