@@ -4,29 +4,44 @@ html, body {
    height: 100%;
    margin: 0;
    min-width: 100%;
+   font-family: 'Bungee Hairline', cursive;
+
 }
 
-
 .full-height {
-   height: 100%;
+  height:100%;
+}
+
+h2 {
+   font-family: 'IBM Plex Sans Condensed', sans-serif;
+   font-size: 15px;
+}
+
+h3 {
+   font-size: 24px;
+   padding:  50px 5px 50px 5px;
+   margin:0;
 }
 
 header {
    background-color: black; 
    color: white;
    width: 100%;
-
+   text-align:center; 
+   display:table;
 }
 
-#title {
+section {
    text-align: center;
-   
 }
 
-#projects {
+#headline {
+   font-family: 'Bungee Hairline', cursive;
+   margin-top: 50%;
+}
+
+#sections {
    width: 100%;
-   text-align: center;
-
 }
 
 #bio {
@@ -35,13 +50,92 @@ header {
    position: relative;
    color: white;
    font-size: 40px;
-   text-align: center;
 
 }
 
 #headshot {
-   left: 50%;
-   height: 60%;
+   left: 40%;
+   height: 50%;
    position:absolute;
    bottom:0;
+}
+
+.guide {
+   z-index: 3;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+   height: 40px;
+   bottom: 0;
+   right:0;
+}
+
+.guide > span {
+   margin: auto;
+}
+
+.devices {
+   width: 90%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+.description {
+   font-family: 'Exo', sans-serif;
+   padding: 0px 0px 50px 0px;
+   width: 80%;
+   text-indent: 10pt;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#bio > p {
+   padding-top:50px;
+   width: 80%;
+   font-size: 15pt;
+   text-indent: 10pt;
+   text-align: left;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.category {
+   font-family: 'Exo', sans-serif;
+background-color: white;
+   font-size: 10pt;
+   top:8px;
+   left:8px;
+   position: fixed;
+   margin: 0;
+   padding-right:5px;
+   z-index: 3;
+
+}
+
+.shortcuts {
+ vertical-align: bottom;
+padding: 0;
+}
+
+ul > li {
+   display: inline;
+   list-style: none;
+}
+
+.tech-logo {
+   height:40px;
+}
+
+.tech-container {
+   float:left;
+   padding: 5px;
+}
+.tech-container > span {
+   font-family: 'Exo', sans-serif;
+   font-size: 15px;
+
+   display: block;
 }
