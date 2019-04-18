@@ -24,7 +24,7 @@ $.scrollify({
     });
 
 
-    $("#sections").scroll(function() { //.box is the class of the div
+    $(".page").scroll(function() { //.box is the class of the div
       $.scrollify.next();
   });
   
