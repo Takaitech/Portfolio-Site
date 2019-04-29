@@ -23,8 +23,7 @@ h2 {
 
 h3 {
    padding: 35px 0px 25px 0px;
-
-   font-size: 24px;
+   font-size: 30px;
 }
 
 h4 {
@@ -45,7 +44,7 @@ section {
 
 #headline {
    font-family: 'Bungee Hairline', cursive;
-   margin-top: 50%;
+   margin-top: 230px;
 }
 
 #sections {
@@ -136,7 +135,7 @@ ul > li {
 }
 
 .tech-logo {
-   height:25px;
+   height:30px;
 }
 
 .tech-container {
@@ -150,6 +149,7 @@ ul > li {
 }
 
 .technology{
+   display: inline-block;
    text-align: center;
    width: 85%;
    margin-left: auto;
@@ -168,4 +168,44 @@ ul > li {
 
 ul {
    margin: 0;
+}
+
+
+@media only screen
+  and (min-device-width: 1020px) {
+   .devices {
+      width:50%;
+      float: right;
+   }
+
+
+   .description {
+      float:left;
+      width:35%;
+      font-size: 20px;
+      padding-left: 40px;
+
+   }
+
+   .technology {
+   margin: 0;
+   text-align: center;
+   width: 40%;
+   }
+
+   .app-links {
+      position: relative;
+      left:600px;
+      top:150px;
+      width:30%;
+      margin: 0;
+   }
+
+
+#headshot {
+   left: 65%;
+   height: 60%;
+   position:absolute;
+   bottom:0;
+}
 }
