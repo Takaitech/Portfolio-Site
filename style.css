@@ -23,7 +23,8 @@ h3 {
 }
 
 h4 {
-   padding: 15px 0 0 0;
+   font-size: 19px;
+   padding: 10px 0 10px 0;
 }
 
 header {
@@ -32,7 +33,6 @@ header {
    width: 100%;
    text-align:center;
    height: 100%;
-
 }
 
 section {
@@ -41,8 +41,11 @@ section {
 }
 
 #headline {
+   width: 95%;
    font-family: 'Bungee Hairline', cursive;
    padding-top: 230px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 #sections {
@@ -56,6 +59,10 @@ section {
    color: white;
    font-size: 40px;
 
+}
+
+.shortcut > input{
+   height:40px;
 }
 
 #headshot {
@@ -88,6 +95,7 @@ section {
 
 
 .description {
+   font-weight: 400;
    font-size: 11pt;
    font-family: 'Exo', sans-serif;
    width: 85%;
@@ -111,69 +119,86 @@ section {
 
 .category {
    font-family: 'Exo', sans-serif;
-   background-color: white;
    font-size: 10pt;
-   top:8px;
-   left:8px;
-   position: fixed;
    margin: 0;
-   padding-right:5px;
-   z-index: 3;
+   position: absolute;
+   left: 5px;
 
 }
 
 .shortcuts {
- vertical-align: bottom;
+   vertical-align: bottom;
    padding: 0;
+   padding-top: 20px;
+}
+
+.shortcut {
+   width: 100px;
+   padding: 0px 10px 0px 10px;
+  
+}
+.shortcut >button {
+   font-family: 'Bungee Hairline', cursive;
+   font-size: 15px;
+   color:white;
+   background-color: black;
+   border: none; 
 }
 
 ul > li {
-   display: inline;
+   display: inline-block;
    list-style: none;
 }
 
 .tech-logo {
-   height:30px;
+   height: 30px;
 }
 
 .tech-container {
-   float:left;
-   margin: 5px;
+   display: inline-block;
+   margin: 0px;
+   text-align: center;
+   padding: 5px 10px 10px 5px;
+
 }
 .tech-container > span {
    font-family: 'Exo', sans-serif;
-   font-size: 12px;
+   font-size: 11px;
    display: block;
 }
 
 .technology{
    display: inline-block;
    text-align: center;
-   width: 85%;
+   width: 65%;
    margin-left: auto;
    margin-right: auto;
 }
 
 .app-links {
-   margin: 15px 0px 20px 0px;
-   font-size: 13px;
+   font-weight: 900;
+   margin: 20px 0px 25px 0px;
+   font-size: 17px;
    color: black;
 }
 
 .app-links > a {
    padding: 0 7px 0 7px;
+   color: black;
 }
 
 ul {
    margin: 0;
+   padding: 0;
 }
 
 
 @media only screen
-  and (min-device-width: 1020px) {
+  and (min-device-width: 1025px) {
    .devices {
       width:50%;
       float: right;
+      padding-right: 60px;
    }
 
 
@@ -181,7 +206,7 @@ ul {
       float:left;
       width:35%;
       font-size: 20px;
-      padding-left: 40px;
+      padding-left: 60px;
 
    }
 
@@ -193,8 +218,8 @@ ul {
 
    .app-links {
       position: relative;
-      left:600px;
-      top:150px;
+      left:630px;
+      top:170px;
       width:30%;
       margin: 0;
    }
@@ -205,5 +230,9 @@ ul {
    height: 60%;
    position:absolute;
    bottom:0;
+}
+
+h3 {
+   margin-bottom: 100px;
 }
 }

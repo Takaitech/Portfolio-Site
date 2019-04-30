@@ -5,6 +5,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Taylor Ward Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Exo:100|IBM+Plex+Sans+Condensed|Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
@@ -16,19 +17,19 @@
                 </H1>
                 <nav>
                     <ul class="shortcuts">
-                        <li>PROJECTS</li>
-                        <li>Bio</li>
+                        <li class="shortcut"><button>Projects</button></li>
+                        <li class="shortcut"><button>Bio</button></li>
                     </ul>
                 </nav>
                 <div class="guide"><span>| scroll |</span></div>
             </header>
         </section>
         <main id="projects">
-            <h2 class="category">PROJECTS</h2>
             <section class="page">
+                <h2 class="category animated section2Category">PROJECTS</h2>
                 <h3>Anime Trailers</h3>
-                <p class="description">  This web app allows the user to select from top or upcoming anime series or movies and pulls up a list of trailers and promo videos straight into the browser where they can preview the anime. It also allows them to search for  a specific anime by title.</p>
-                <img class="devices" src="files/bit-synth-devices.png">
+                <p class="description animated section2Description">  This web app allows the user to select from top or upcoming anime series or movies and pulls up a list of trailers and promo videos straight into the browser where they can preview the anime. It also allows them to search for  a specific anime by title.</p>
+                <img class="devices animated slow section2Image" src="files/bit-synth-devices.png">
                 <div class="app-links">
                     <a href="https://takaitech.github.io/ANIME-TRAILERS/">Live App</a>|
                     <a href="https://github.com/Takaitech/ANIME-TRAILERS">Git Repo</a>
@@ -44,6 +45,7 @@
                 </div>
             </section>
             <section class="page">
+
                     <h3>Open-Up-App</h3>
                     <p class="description"> Open Up is an anonymous online social space intended for users with mental health disorders. It provides the user with the freedom to express themselves and get advice from others without having to show their identity about mental health issues </p>
                     <img class="devices" src="files/bit-synth-devices.png">
@@ -93,7 +95,7 @@
         <script
         src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> 
         <script src="script/jquery.scrollify.js"></script>
         <script src="script/app.js"></script>
     </body>
