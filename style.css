@@ -13,11 +13,15 @@ html, body {
 }
 
 h2 {
-   font-family: 'IBM Plex Sans Condensed', sans-serif;
+   font-weight: 500;
    font-size: 15px;
+   font-family: 'Exo', sans-serif;
+   opacity: 0.6;
+
 }
 
 h3 {
+   font-weight: 900;
    padding: 35px 0px 25px 0px;
    font-size: 30px;
 }
@@ -70,16 +74,17 @@ section {
    height: 40%;
    position:absolute;
    bottom:0;
+   z-index: 0
 }
+
 
 .guide {
    z-index: 3;
-   position: fixed;
    text-align: center;
    width: 100%;
    height: 40px;
    bottom: 0;
-   right:0;
+   position: absolute
 }
 
 .guide > span {
@@ -91,6 +96,7 @@ section {
    display: block;
    margin-left: auto;
    margin-right: auto;
+   padding: 20px 0px 20px 0px;
 }
 
 
@@ -109,7 +115,7 @@ section {
 
 #bio > p {
    font-size: 12pt;
-   padding-top: 100px;
+   padding-top: 60px;
    width: 80%;
    text-indent: 10pt;
    text-align: left;
@@ -117,13 +123,20 @@ section {
    margin-right: auto;
 }
 
-.category {
-   font-family: 'Exo', sans-serif;
-   font-size: 10pt;
+.bioTitle {
    margin: 0;
    position: absolute;
-   left: 5px;
+   left: 10px;
+   top: 5px;
+   
+}
 
+.projectTitle {
+   margin: 0;
+   position: absolute;
+   left: 10px;
+   color: lightgray;
+   
 }
 
 .shortcuts {
@@ -192,6 +205,20 @@ ul {
    padding: 0;
 }
 
+#contact {
+   text-align: middle;
+}
+
+.contactTitle {
+   padding-top: 20px; 
+   left:10px;
+}
+
+.email{
+   padding-top: 30px;
+   font-size: 15px;
+}
+
 
 @media only screen
   and (min-device-width: 1025px) {
@@ -217,16 +244,16 @@ ul {
    }
 
    .app-links {
-      position: relative;
-      left:630px;
-      top:170px;
-      width:30%;
+      
+      text-align: center;
+      width:50%;
       margin: 0;
+      padding-top: 40px;
    }
 
 
 #headshot {
-   left: 65%;
+   left:70%;
    height: 60%;
    position:absolute;
    bottom:0;
@@ -235,4 +262,26 @@ ul {
 h3 {
    margin-bottom: 100px;
 }
+
+#bio > p {
+   width: 50%;
+   font-size: 18px;
+   margin-left: 0;
+   margin-right: auto;
+   padding: 80px 0px 80px 60px;
+}
+
+#bio {
+   text-align: left;
+}
+
+.contactTitle {
+   margin-left: 10px;
+}
+
+.email{
+   font-size: 20px;
+}
+
+
 }
