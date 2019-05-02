@@ -1,6 +1,6 @@
 $(function() {
     $.scrollify({
-        section: ".page",  
+        section: ".page",
         scrollSpeed: 2000, 
         before: function(section) {
         console.log(section)

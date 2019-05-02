@@ -71,7 +71,7 @@ section {
 
 #headshot {
    left: 40%;
-   height: 40%;
+   height: 30%;
    position:absolute;
    bottom:0;
    z-index: 0
@@ -114,7 +114,7 @@ section {
 }
 
 #bio > p {
-   font-size: 12pt;
+   font-size: 10pt;
    padding-top: 60px;
    width: 80%;
    text-indent: 10pt;
@@ -206,17 +206,26 @@ ul {
 }
 
 #contact {
-   text-align: middle;
+   text-align: left;
 }
 
 .contactTitle {
-   padding-top: 20px; 
-   left:10px;
+   padding-top: 20px;
+   padding-left: 10px;
 }
 
 .email{
    padding-top: 30px;
    font-size: 15px;
+   margin-left: auto;
+   margin-right:auto;
+   width: 80%;
+}
+
+.topShortcut {
+   position: absolute;
+   left:20px;
+   bottom:20px;
 }
 
 
