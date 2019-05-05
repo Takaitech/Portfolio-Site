@@ -4,7 +4,7 @@
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <title>Taylor Ward Portfolio</title>
-        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Exo:100|IBM+Plex+Sans+Condensed|Press+Start+2P" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Exo+2:100,200,300,400" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
@@ -16,21 +16,42 @@
                     AM <br> TAYLOR WARD <br> - <br> Fullstack web developer <br>  currently based in Los Angeles, Ca
                     <div id="cursor"></div>
                 </H1>
-                <nav>
-                    <ul class="shortcuts">
-                        <li class="shortcut"><button class="projectShortcut">Projects</button></li>
-                        <li class="shortcut"><button class="bioShortcut">Bio</button></li>
-                    </ul>
-                </nav>
+                
                 <div class="guide"><span>| scroll |</span></div>
             </header>
+        </section>
+        <section id="bio" class="page">
+                <nav>
+                        <ul class="pagination animated delay-1s">
+                        <li class="shortcut one"><button></button></li>
+                        <br>
+                        <li class="shortcut two"><button></button></li>
+                        <br>
+                        <li class="shortcut three"><button></button></li>
+                        <br>
+                        <li class="shortcut four"><button></button></li>
+                        <br>
+                        <li class="shortcut five"><button></button></li>
+                        <br>
+                        <li class="shortcut six"><button></button></li>
+                        <br>
+                        </ul>
+                    </nav>
+            <h2 class="bioTitle animated fast delay-1s section5Category">About</h2>
+            <div class="wrapper">
+            <img id="headshot" src="files/headshot3.JPG">
+            <p class="bioDescription">The need to constantly learn new ways to create interesting, memorable, 
+                and sharable experiences whether that be through technology, design, or music 
+                is really what has led me down the path of becoming a web developer. I find a lot of joy in coding because 
+                </p>
+            </div>
         </section>
         <main id="projects">
             <section class="page">
                 <h2 class="projectTitle animated fast delay-1s section2Category">Projects</h2>
                 <h3 class="animated faster delay-2s section2Title">Anime Trailers</h3>
-                <p class="description animated slow delay-4s section2Description">  This web app allows the user to select from top or upcoming anime series or movies and pulls up a list of trailers and promo videos straight into the browser where they can preview the anime. It also allows them to search for  a specific anime by title.</p>
-                <img class="devices animated slow delay-3s section2Image" src="files/anime-trailers-devices.png">
+                <p class="description animated slow delay-3s section2Description">  This web app allows the user to find trailers and promo videos from a selection of top or upcoming anime or by searching a specific anime.</p>
+                <img class="devices animated slow delay-2s section2Image" src="files/anime-trailers-devices.png">
             
                 <div class="technology animated delay-4s section2Tech">
                     <h4>Tech</h4>
@@ -47,10 +68,10 @@
                     </div>
             </section>
             <section class="page">
-                    <h2 class="projectTitle animated fast delay-1s section2Category">Projects</h2>
-                    <h3 class="animated faster delay-1s section3Title">Open-Up-App</h3>
-                    <p class="description animated slow delay-4s section3Description"> Open Up is an anonymous online social space intended for users with mental health disorders. It provides the user with the freedom to express themselves and get advice from others without having to show their identity about mental health issues </p>
-                    <img class="devices animated slow delay-2s section3Image" src="files/bit-synth-devices.png">
+                    <h2 class="projectTitle animated fast delay-1s section3Category">Projects</h2>
+                    <h3 class="animated faster delay-2s section3Title">Open-Up-App</h3>
+                    <p class="description animated slow delay-3s section3Description"> Open Up is an anonymous online social space intended for users with mental health disorders. It provides the user with the freedom to express themselves and get advice from others and licensed therapists about mental health issues without having to show their identity.</p>
+                    <img class="devices animated slow delay-2s section3Image" src="files/open-up-app-devices.png">
 
                         <div class="technology animated delay-4s section3Tech">
                             <h4>Tech</h4>
@@ -62,15 +83,15 @@
                             </ul>
                         </div>
                         <div class="app-links animated delay-4s section3Links">
-                                <a href="https://takaitech.github.io/ANIME-TRAILERS/">Live App</a>|
-                                <a href="https://github.com/Takaitech/ANIME-TRAILERS">Git Repo</a>
+                                <a href="https://open-up-app.herokuapp.com/">Live App</a>|
+                                <a href="https://github.com/Takaitech/Open-Up-App">Git Repo</a>
                         </div>
             </section>
             <section class="page">
-                    <h2 class="projectTitle animated fast delay-1s section2Category">Projects</h2>
+                    <h2 class="projectTitle animated fast delay-1s section4Category">Projects</h2>
                 <div class="sidebar"></div>
-                    <h3 class="animated faster delay-1s section4Title">Bit Synth</h3>
-                    <p class="description animated slow delay-4s section4Description"> Bit Synth is an in browser polyphonic synthesizer and step sequencer that invites the user to shape sound and create synth presets to contribute to a public library of synth presets inspired by retro 8 bit and 16bit video games</p>
+                    <h3 class="animated faster delay-2s section4Title">Bit Synth</h3>
+                    <p class="description animated slow delay-3s section4Description"> Bit Synth is an in browser polyphonic synthesizer and step sequencer built with the help of the tone.js library. It allows the user to shape soundwaves, create and save synth presets to contribute to a public library of synth presets inspired by retro 8 bit and 16bit video games</p>
                     <img class="devices animated slow delay-2s section4Image" src="files/bit-synth-devices.png">
                     
                         <div class="technology animated delay-4s section4Tech">
@@ -86,25 +107,23 @@
                             </ul>
                         </div>
                         <div class="app-links animated delay-4s section4Links">
-                                <a href="https://takaitech.github.io/ANIME-TRAILERS/">Live App</a>|
-                                <a href="https://github.com/Takaitech/ANIME-TRAILERS">Git Repo</a>
+                                <a href="https://bit-synth.herokuapp.com/">Live App</a>|
+                                <a href="https://github.com/Takaitech/Bit-Synth-Client">Git Repo</a>
                         </div>
             </section>
-            <section id="bio" class="page">
-                <h2 class="bioTitle animated fast delay-1s section5Category">Bio</h2>
-                <p>The need to constantly learn new ways to create interesting, memorable, 
-                    and sharable experiences whether that be through technology, art, or music 
-                    has led me down the path of becoming a web developer. I find a lot of joy in coding because 
-                    
-                    The need to constantly learn new ways to create interesting, memorable, 
-                    and sharable experiences whether that be through technology, art, or music 
-                    has led me down the path of becoming a web developer. I find a lot of joy in coding because</p>
-                <img id="headshot" src="files/headshot.png">
-                <div id="contact">
-                    <h2 class="contactTitle">Contact</h2>
-                    <p class="email">takai.tech2144@gmail.com</p>
+            <section id="contact" class="page">
+                <h2 class="contactTitle">Contact</h2>
+                <div class="contactContainer">
+                    <div class="nameContainer animated slower ">
+                    </div>
+                    <p class="name">Taylor Ward</p>
+                    <p class="email">Email Address</p>
+                    <a class="emailLink" href="mailto: takai.tech2144@gmail.com">takai.tech2144@gmail.com</a>
+                    <div class="linkContainer">
+                    <a class="linkedinLink" href="https://www.linkedin.com/in/taylor-ward-7a370a169"><img src="https://img.icons8.com/color/104/000000/linkedin.png"></a>
+                    <a class="githubLink" href="https://www.linkedin.com/in/taylor-ward-7a370a169"><img src="http://www.logospng.com/images/182/github-icon-182553.png"></a>
+                    </div>
                 </div>
-                <button class="shortcut topShortcut">top</button>
             </section>
         </main>
         <script
