@@ -15,10 +15,9 @@ html, body {
 
 h2 {
    font-family: 'Bungee Hairline', sans-serif;
-   color:  #cfcfcf;
+   color:  #919191;
    font-size: 15px;
    font-weight: 200;
-   padding-right: 150%;
    padding-top: 5px;
    /*border-bottom: 1px solid #cfcfcf; */
 
@@ -26,12 +25,12 @@ h2 {
 
 h3 {
    font-family: 'Bungee Hairline', sans-serif;
-   padding: 35px 0px 15px 0px;
-   font-size: 23px
+   padding: 50px 0px 0px 0px;
+   font-size: 28px
 }
 
 h4 {
-   padding: 5px 0 5px 0;
+   padding: 20px 0 20px 0;
 }
 
 header {
@@ -98,7 +97,7 @@ section {
    position: fixed;
    right: 5px;
    z-index: 5;
-   top:39px;
+   top:5px;
 }
 
 .pagination > li {
@@ -145,20 +144,19 @@ section {
 .devices {
    width: 80%;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 10px auto 10px auto;
    padding: 10px 0px 5px 0px;
 }
 
 
 .description {
-   font-size: 14px;
+   font-size: 15px;
    width: 80%;
    text-indent: 10pt;
    text-align: left;
    margin-left: auto;
    margin-right: auto;
-   padding-top:10px;
+   padding-top:20px;
    padding-bottom: 5px;
 }
 
@@ -217,7 +215,7 @@ ul > li {
 }
 
 .tech-logo {
-   height: 20px;
+   height: 25px;
 }
 
 .tech-container {
@@ -236,13 +234,13 @@ ul > li {
 .technology{
    display: inline-block;
    text-align: center;
-   width: 70%;
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
 }
 
 .app-links {
-   margin: 20px 0px 25px 0px;
+   margin: 25px 0px 25px 0px;
    color: black;
 }
 
@@ -324,10 +322,47 @@ ul {
 
 
 
+/* small mobiles */
+@media only screen
+  and (max-device-width: 320px) {
+   .tech-logo {
+      height:20px;
+   }
 
 
+   .app-links {
+      padding-top: 10px;
+      margin-top:0;
+   }
+    
+   h4 {
+      padding-top: 5px;
+      padding-bottom: 5px
+   }
+
+   .technology {
+      width: 60%;
+   }
+
+   .devices {
+      margin-bottom: 0;
+   }
+}
+
+/* desktop */
 @media only screen
   and (min-device-width: 1025px) {
+   .nameContainer {
+      width: 400px;
+      height: 400px;
+   }
+
+   .name {
+      bottom: 215px;
+
+   }
+   
+
 
    #headline {
       padding-top: 200px;
@@ -355,7 +390,7 @@ ul {
       float:left;
       width:35%;
       margin-left:80px;
-      font-size: 25px;
+      font-size: 22px;
    }
    .tech-logo {
       height: 30px;
@@ -381,11 +416,14 @@ ul {
    }
    
    .app-links {
+      float: right;
+      display: inline-block;
       text-align: center;
       width:50%;
       margin: 0;
-      padding-top: 40px;
-      font-size: 25px;
+      padding-top: 20px;
+      font-size: 22px;
+      margin-right: 60px;
    }
 
 
