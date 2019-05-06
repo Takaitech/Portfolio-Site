@@ -336,6 +336,11 @@ a:hover {
    }
 
 
+   .bioDescription {
+      font-size: 12px;
+   }
+
+
    .app-links {
       padding-top: 10px;
       margin-top:0;
