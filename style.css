@@ -81,6 +81,7 @@ section {
 }
 
 #headshot {
+   z-index: 4;
    float: left;
    width: 60%;
    border-radius: 60%;
@@ -163,7 +164,7 @@ section {
 .bioDescription {
    margin-top: 18px;
    font-weight: 100;
-   font-size: 15px;
+   font-size: 13px;
    text-indent: 10pt;
 }
 
