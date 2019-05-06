@@ -359,12 +359,12 @@ a:hover {
 @media only screen
   and (min-device-width: 1025px) {
    .nameContainer {
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
    }
 
    .name {
-      bottom: 215px;
+      bottom: 170px;
 
    }
    
