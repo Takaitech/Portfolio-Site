@@ -24,10 +24,9 @@ h2 {
 }
 
 h3 {
-   font-family: 'Bungee Hairline', sans-serif;
    padding: 50px 0px 0px 0px;
    font-size: 28px;
-   font-weight: normal;
+   font-weight: 200;
 }
 
 h4 {
@@ -84,7 +83,6 @@ section {
 #headshot {
    float: left;
    width: 60%;
-   z-index: 0;
    border-radius: 60%;
    margin: 20px 20px 20px 0px;
    -webkit-shape-outside: circle();
@@ -165,7 +163,7 @@ section {
 .bioDescription {
    margin-top: 18px;
    font-weight: 100;
-   font-size: 18px;
+   font-size: 15px;
    text-indent: 10pt;
 }
 
