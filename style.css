@@ -77,7 +77,7 @@ section {
    width: 80%;
    margin-left: auto;
    margin-right: auto;
-   padding-top:60px;
+   padding-top:40px;
 }
 
 #headshot {
@@ -164,7 +164,7 @@ section {
 .bioDescription {
    margin-top: 18px;
    font-weight: 100;
-   font-size: 13px;
+   font-size: 12px;
    text-indent: 10pt;
 }
 
