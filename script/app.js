@@ -4,8 +4,7 @@ $(function() {
         section: ".page",
         scrollSpeed: 2000, 
         before: function(section) {
-        console.log(section)
-        if(section === 1) {
+        if(section === 1 || section === 2 || section === 3 || section === 4 || section === 5) {
             $(".pagination").css("visibility","visible")
             $(".pagination").addClass("fadeIn")
         }
@@ -62,15 +61,3 @@ $(".five").on('click', function() {
 $(".six").on('click', function() {
     $.scrollify.move(5);
 })
-
-
-$(".shortcut").hover(
-    function() {
-        $(this).find("span").css("visibility","visible")
-    },
-    function() {
-        $(this).find("span").css("visibility","hidden")
-    }
-    
-
-)
