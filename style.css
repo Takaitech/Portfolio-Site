@@ -1,7 +1,6 @@
-*{
+* {
    margin:0;
 }
-
 
 html, body {
    overflow-x: hidden;
@@ -15,12 +14,10 @@ html, body {
 
 h2 {
    font-family: 'Bungee Hairline', sans-serif;
-   color:  #919191;
    font-size: 15px;
    font-weight: 200;
+   color:  rgb(31,31,31);
    padding-top: 5px;
-   /*border-bottom: 1px solid #cfcfcf; */
-
 }
 
 h3 {
@@ -47,7 +44,7 @@ section {
 }
 
 #headline {
-   font-size: 19px;
+   font-size: 20px;
    font-family: 'Bungee Hairline', sans-serif;
    width: 95%;
    padding-top: 50%;
@@ -77,7 +74,7 @@ section {
    width: 80%;
    margin-left: auto;
    margin-right: auto;
-   padding-top:15px;
+   padding-top:10px;
 }
 
 #headshot {
@@ -129,6 +126,7 @@ section {
 
 
 .guide {
+   font-size: 19px;
    font-family: 'Bungee Hairline', sans-serif;
    z-index: 3;
    text-align: center;
@@ -145,7 +143,7 @@ section {
 .devices {
    width: 80%;
    display: block;
-   margin: 10px auto 10px auto;
+   margin: 10px auto 0px auto;
    padding: 10px 0px 5px 0px;
 }
 
@@ -164,7 +162,7 @@ section {
 .bioDescription {
    margin-top: 18px;
    font-weight: 100;
-   font-size: 14px;
+   font-size: 15px;
    text-indent: 10pt;
 }
 
@@ -180,7 +178,10 @@ section {
    margin: 0;
    position: absolute;
    left: 10px;
-   
+}
+
+.white {
+   color:white;
 }
 
 .projectTitle {
@@ -228,14 +229,14 @@ ul > li {
 }
 .tech-container > span {
    display: block;
-   font-size: 10px;
+   font-size: 12px;
    padding: 3px 3px 3px 3px;
 }
 
 .technology{
    display: inline-block;
    text-align: center;
-   width: 100%;
+   width: 60%;
    margin-left: auto;
    margin-right: auto;
 }
@@ -285,7 +286,7 @@ ul {
    bottom: 120px;
    color:black;
    text-align: center;
-   font-size: 20px;
+   font-size: 22px;
    font-family: 'Bungee Hairline', sans-serif;
 
 }
@@ -352,7 +353,7 @@ a:hover {
    }
 
    .technology {
-      width: 60%;
+      width: 70%;
    }
 
    .devices {
@@ -370,7 +371,7 @@ a:hover {
 
    .name {
       bottom: 170px;
-
+      font-size: 30px;
    }
    
 
@@ -477,6 +478,10 @@ h3 {
 .topShortcut {
    font-size: 15px;
    left: 10px;
+}
+
+.pagination {
+   right:20px;
 }
 
 }
