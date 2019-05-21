@@ -2,7 +2,7 @@
 $(function() {
     $.scrollify({
         section: ".page",
-        scrollSpeed: 2000, 
+        scrollSpeed: 1000, 
         before: function(section) {
         if(section === 1 || section === 2 || section === 3 || section === 4 || section === 5) {
             $(".pagination").css("visibility","visible")
