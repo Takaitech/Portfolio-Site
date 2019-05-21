@@ -97,6 +97,7 @@ section {
    margin-top: 18px;
    font-weight: 100;
    text-indent: 10pt;
+   font-size: 0.95em;
 }
 
 /* Pagination*/ 
@@ -138,7 +139,18 @@ section {
    background-color: #44c88d;
 }
 
+.emailLink:hover {
+   position: relative;
+   zoom:1.2;
+}
 
+.app-links > a:hover {
+   position: relative;
+   zoom:1.2;
+}
+a:hover {
+   opacity: 0.8;
+}
 
 /* Sections */ 
 #sections {
@@ -290,10 +302,6 @@ ul {
 
 .email {
    color:white;
-}
-
-a:hover {
-   transform: scale(1.5);
 }
 
 .emailLink {
