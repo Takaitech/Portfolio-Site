@@ -61,3 +61,5 @@ $(".five").on('click', function() {
 $(".six").on('click', function() {
     $.scrollify.move(5);
 })
+
+
