@@ -321,7 +321,9 @@ ul {
 
 .githubLink >img {
    display: inline-block;
-   height:50px;
+   height:45px;
+   position: relative;
+   bottom: 3px;
 }
 
 .linkedinLink >img {
