@@ -25,8 +25,6 @@ $(function() {
         section === 4 ||
         section === 5
       ) {
-        $(".pagination").css("visibility", "visible");
-        $(".pagination").addClass("fadeIn");
       }
       if(section === 0) { 
         whiteButtons()
@@ -134,6 +132,8 @@ setTimeout(() => {
       setTimeout(() => {
         $('.guide').addClass('fadeIn')
       },100)
+      $(".pagination").css("visibility", "visible");
+      $(".pagination").addClass("fadeIn");
       clearInterval(interval);
       return;
       

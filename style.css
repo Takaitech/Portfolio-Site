@@ -138,6 +138,7 @@ section {
 
 /* Pagination*/ 
 .pagination {
+   visibility: hidden;
    text-align: right;
    position: fixed;
    right: 10px;
@@ -172,8 +173,13 @@ section {
    cursor: pointer;
 }
 
+.pagination > .one > button {
+   background-color: rgb(60, 60, 60);
+}
+
+
 .pagination > li >button:hover {
-   background-color: #44c88d;
+   background-color: rgb(60, 60, 60);
 }
 
 .app-links > a:hover {
