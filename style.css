@@ -23,14 +23,15 @@ h2 {
    font-family: 'Bungee Hairline', sans-serif;
    font-weight: 200;
    color:  rgb(31,31,31);
-   padding-top: 5px;
-   font-size: 1em;
+   top: 10px;
+   font-size: 1.3em;
 }
 
 h3 {
    font-weight: 200;
    padding: 30px 0px 0px 0px;
    font-size: 1.5em
+   
 }
 
 h4 {
@@ -49,9 +50,30 @@ header {
 }
 
 section {
-   display: block;
+   position: relative;
    text-align: center;
+   display: flex;
+   align-items: center;
 }
+
+
+
+.currentRow {
+   padding-right: 5px;
+   border-right: 1px solid white;
+   animation: 1.10s linear infinite blink;
+   animation-timing-function: steps(1, end);
+}
+
+
+
+@keyframes blink {
+   50% {
+      border-right: 1px solid transparent;
+
+   }
+}
+
 
 .guide {
    font-family: 'Bungee Hairline', sans-serif;
@@ -61,11 +83,25 @@ section {
    display: table-row; 
    vertical-align: bottom; 
    position: relative;
+   opacity: 0;
 }
 
 .guide > span {
    position: relative;
    bottom:10px;
+}
+
+.fadeIn {
+   animation: 1s linear forwards fadeIn;
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
 }
 
 /* Bio */ 
@@ -102,13 +138,13 @@ section {
 
 /* Pagination*/ 
 .pagination {
-   visibility: hidden;
    text-align: right;
    position: fixed;
    right: 10px;
    z-index: 5;
-   top:10px;
    padding-left: 20px;
+   top: 50%;
+   transform: translate(0%, -50%);
 }
 
 .pagination > li {
@@ -129,19 +165,15 @@ section {
    display: inline-block;
    vertical-align: middle;
    right:0px;
-   border: 1px black solid;
+   border: 1px rgb(60, 60, 60) solid;
    padding:3px;
-   background: white;
+   background: transparent;
    border-radius: 100px;
+   cursor: pointer;
 }
 
 .pagination > li >button:hover {
    background-color: #44c88d;
-}
-
-.emailLink:hover {
-   position: relative;
-   zoom:1.2;
 }
 
 .app-links > a:hover {
@@ -188,12 +220,6 @@ a:hover {
    padding-bottom: 5px;
 }
 
-.contactTitle {
-   margin: 0;
-   position: absolute;
-   left: 10px;
-}
-
 .white {
    color:white;
 }
@@ -201,7 +227,6 @@ a:hover {
 .projectTitle {
    margin: 0;
    position: absolute;
-   left: 10px;
 }
 
 .shortcuts {
@@ -274,6 +299,7 @@ ul {
    overflow: hidden;
 }
 
+
 .contactContainer {
    width: 80%;
    color: black;
@@ -310,7 +336,15 @@ ul {
    color:white;
    display: block;
    width: 100%;
+   transition: ease-in .5s all;
+   
 }
+
+.emailLink:hover {
+   letter-spacing: 2px;
+   cursor: pointer;
+}
+
 
 .linkContainer {
    margin-top: 40px;
@@ -329,6 +363,15 @@ ul {
 .linkedinLink >img {
    display: inline-block;
    height:50px;
+}
+
+.email {
+   font-size: 0.7em;
+}
+
+.emailLink {
+   font-size: 1em;
+
 }
 
 /* Small mobile screens */
@@ -354,15 +397,20 @@ ul {
    }
 
    h2 {
-      font-size: 1.3em;
+      position: absolute;
+      left: 25px;
+      font-family: 'Bungee Hairline', sans-serif;
+      font-weight: 200;
+      color:  rgb(31,31,31);
+      top: 25px;
    }
 
    h3 {
       font-size: 1.9em;
    }
 
+
    #bio {
-      display: table;
    }
 
    .wrapper {
@@ -382,29 +430,57 @@ ul {
       margin-right: auto;
       margin-top: 80px;
       width: 60%;
+
+      font-size: 1.4vw;
    }
 
-   .row {
+   .row1 {
       display: flex;
-      width: 90%;
+      width: 85%;
       margin: 0 auto;
+      align-items: center;
+      position: relative;
+      justify-content: space-between;
+
+   }
+
+   .row2 {
+      display: flex;
+      width: 85%;
+      margin: 0 auto;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .info {
+      flex: 0 0 35%;
    }
 
    .description {
       text-align: left;
       margin-left: 5%;
-      padding-top: 80px;
-      font-size: 1em;
-      flex: 0 0 38%;
+      padding-top: 30px;
+      font-size: 1.5vw;
+      width: 100%;
       display: flex;
       align-items: center;
+      margin: 0 auto;
    }
+   .image-link {
+      flex: 0 0 60%;
 
+   }
    .devices {
-      margin-right: 5%;
-      flex: 0 0 42%;
-      padding-top: 80px;
+      margin: 0 auto;
       align-items: center;
+      width: 100%;
+
+   }
+   .technology {
+      flex: 0 0 100%;
+      font-size: 1.5vw;
+
    }
 
    .tech-logo {
@@ -420,6 +496,12 @@ ul {
       bottom:190px;
    }
 
+   .app-links {
+      
+      flex: 0 0 35%;
+
+   }
+
    .pagination {
       right: 20px;
    }
@@ -431,4 +513,6 @@ ul {
    .pagination > li >button {
       padding: 4px;
    }
+   
 }
+
