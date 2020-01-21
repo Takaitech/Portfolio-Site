@@ -184,7 +184,7 @@ section {
 
 .app-links > a:hover {
    position: relative;
-   zoom:1.2;
+   text-decoration: underline;
 }
 a:hover {
    opacity: 0.8;
@@ -291,6 +291,7 @@ ul > li {
 .app-links > a {
    padding: 0 7px 0 7px;
    color: black;
+   text-decoration: none;
 }
 
 ul {

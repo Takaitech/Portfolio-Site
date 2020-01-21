@@ -25,17 +25,18 @@ $(function() {
         section === 4 ||
         section === 5
       ) {
+        
       }
       if(section === 0) { 
         whiteButtons()
         deselectAllButtons()
-        $(".one").children().css("backgroundColor","#c3c3c3")
+        $(".one").children().css("backgroundColor","#e6e6e6")
 
       }
       if(section === 1) { 
         blackButtons()
         deselectAllButtons()
-        $(".two").children().css("backgroundColor","#c3c3c3")
+        $(".two").children().css("backgroundColor","#e6e6e6")
       }
 
       if (section === 2) {
@@ -47,7 +48,7 @@ $(function() {
         $(".section2Links").addClass("fadeInUp");
         blackButtons()
         deselectAllButtons()
-        $(".three").children().css("backgroundColor","#c3c3c3")
+        $(".three").children().css("backgroundColor","#e6e6e6")
 
       }
       if (section === 3) {
@@ -58,7 +59,7 @@ $(function() {
         $(".section3Links").addClass("fadeInUp");
         blackButtons()
         deselectAllButtons()
-        $(".four").children().css("backgroundColor","#c3c3c3")
+        $(".four").children().css("backgroundColor","#e6e6e6")
 
       }
       if (section === 4) {
@@ -69,14 +70,14 @@ $(function() {
         $(".section4Links").addClass("fadeInUp");
         blackButtons()
         deselectAllButtons()
-        $(".five").children().css("backgroundColor","#c3c3c3")
+        $(".five").children().css("backgroundColor","#e6e6e6")
 
       }
       if (section === 5) {
         $(".nameContainer").addClass("slideInDown");
         whiteButtons()
         deselectAllButtons()
-        $(".six").children().css("backgroundColor","#c3c3c3")
+        $(".six").children().css("backgroundColor","#e6e6e6")
         
       }
     }
