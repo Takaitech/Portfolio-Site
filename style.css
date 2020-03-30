@@ -11,7 +11,10 @@ html, body {
    min-width: 100%;
    font-family: 'Exo 2', sans-serif;
    font-weight: 100;
+   background-color: black;
 }
+
+button:focus {outline:0;}
 
 body {
    font-size: 14.0px
@@ -174,7 +177,7 @@ section {
 }
 
 .pagination > .one > button {
-   background-color: rgb(60, 60, 60);
+   background-color: #abebd0;
 }
 
 
